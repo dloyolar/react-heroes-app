@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { heroImgs } from '../../helpers/heroImages';
 
 import './HeroCard.css';
 
@@ -10,14 +11,16 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const imagePath = `/assets/${id}.jpg`;
-
   return (
     <Link
       to={`/hero/${id}`}
       className="my-card animate__animated animate__fadeIn"
     >
-      <img src={imagePath} className="img img-responsive" alt={superhero} />
+      <img
+        src={heroImgs(`./${id}.jpg`)}
+        className="img img-responsive"
+        alt={superhero}
+      />
       <div className="profile-name">{superhero}</div>
       <div className="profile-position">{alter_ego}</div>
       <div className="profile-overview">
