@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type';
 import { authReducer } from '../../auth/authReducer';
 import { types } from '../../types/types';
 
