@@ -1,5 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test on <SearchScreen /> should be display batman and input value with queryString 1`] = `
+Array [
+  <h1>
+    Search Screen
+  </h1>,
+  <br />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Search a hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary mt-3 btn-block"
+          onClick={[Function]}
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <a
+        className="my-card animate__animated animate__fadeIn"
+        href="/hero/dc-batman"
+        onClick={[Function]}
+      >
+        <img
+          alt="Batman"
+          className="img img-responsive"
+          src="/assets/dc-batman.jpg"
+        />
+        <div
+          className="profile-name"
+        >
+          Batman
+        </div>
+        <div
+          className="profile-position"
+        >
+          Bruce Wayne
+        </div>
+        <div
+          className="profile-overview"
+        >
+          <div
+            className="profile-overview"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-ms-4"
+              >
+                <h3>
+                  DC Comics
+                </h3>
+                <p
+                  className="fw-bold"
+                >
+                  First appaerance: 
+                  <br />
+                  Detective Comics #27
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Test on <SearchScreen /> should be display correctly with default values 1`] = `
 Array [
   <h1>
