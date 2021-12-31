@@ -1,5 +1,5 @@
 import { mount } from 'enzyme';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { AuthContext } from '../../../auth/authContext';
 import { Navbar } from '../../../components/ui/Navbar';
 import { types } from '../../../types/types';
@@ -22,8 +22,10 @@ describe('Test on <Navbar />', () => {
 
   const wrapper = mount(
     <AuthContext.Provider value={contextValue}>
-      <MemoryRouter initialEntries={['/marvel']}>
-        <Navbar />
+      <MemoryRouter initialEntries={['/']}>
+        <Routes>
+          <Route path="/" element={<Navbar />} />
+        </Routes>
       </MemoryRouter>
     </AuthContext.Provider>
   );

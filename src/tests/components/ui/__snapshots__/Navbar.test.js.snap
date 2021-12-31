@@ -18,8 +18,7 @@ exports[`Test on <Navbar /> should be display correctly 1`] = `
       className="navbar-nav"
     >
       <a
-        aria-current="page"
-        className="nav-item nav-link active"
+        className="nav-item nav-link "
         href="/marvel"
         onClick={[Function]}
       >
